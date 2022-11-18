@@ -35,7 +35,7 @@ type UnsolicitedEventHandler func(Event)
 //
 // The function blocks while listening to events, it returns if an
 // error occurs while reading the remote connection or if ctx is canceled.
-// When an event is received, handler is called on a new goroutine.
+// When an event is received, handler is called on the caller goroutine.
 //
 // Listen opens a separate connection to handle events only, not interfering with
 // the solicited requests/reply exchanges occurring on this ControlInterface.
@@ -78,7 +78,7 @@ func (ctrlIface *ControlInterface) Listen(ctx context.Context, handler Unsolicit
 			data = data[3:]
 		}
 
-		go handler(Event{
+		handler(Event{
 			Priority: EventPriority(priority),
 			Data:     data,
 		})
