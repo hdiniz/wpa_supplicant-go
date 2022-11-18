@@ -1,6 +1,8 @@
 # wpa_supplicant-go
-[![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/hdiniz/wpa_supplicant-go)
-[![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://raw.githubusercontent.com/hdiniz/wpa_supplicant-go/master/LICENSE)
+[![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg)](https://pkg.go.dev/github.com/hdiniz/wpa_supplicant-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/hdiniz/wpa_supplicant-go)](https://goreportcard.com/report/github.com/hdiniz/wpa_supplicant-go)
+[![codecov](https://codecov.io/github/hdiniz/wpa_supplicant-go/branch/main/graph/badge.svg?token=B7ANCTQGRQ)](https://codecov.io/github/hdiniz/wpa_supplicant-go)
+[![License](http://img.shields.io/badge/license-mit-blue.svg)](https://raw.githubusercontent.com/hdiniz/wpa_supplicant-go/master/LICENSE)
 
 Implementation of the wpa_supplicant / hostapd control interface in Go (no CGO).
 
